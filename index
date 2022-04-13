@@ -8,7 +8,7 @@ async function getMovies(){
     const $ = cheerio.load(data);
 
     $('.wikitable tbody tr').each((i,elem) => {
-        const name = $(elem).find('td[style*="blacground:#FAEB86"]').last().text();
+        const name = $(elem).find('td[style*="background:#FAEB86"]').last().text();
         console.log(name);
 
 
