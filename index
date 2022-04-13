@@ -6,6 +6,13 @@ const url = "https://pt.wikipedia.org/wiki/Oscar_de_melhor_filme";
 async function getMovies(){
     const { data } = await axios.get(url);
     const $ = cheerio.load(data);
+
+    $('.wikitable tbody tr').each((i,elem) => {
+        const name = $(elem).find('td[style*="blacground:#FAEB86"]').last().text();
+        
+
+
+    });
 }
 
 getMovies();
