@@ -9,7 +9,7 @@ async function getMovies(){
 
     $('.wikitable tbody tr').each((i,elem) => {
         const name = $(elem).find('td[style*="blacground:#FAEB86"]').last().text();
-        
+        console.log(name);
 
 
     });
